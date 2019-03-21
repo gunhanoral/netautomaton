@@ -3,7 +3,7 @@ services:
   netautomaton:
     build:
       context: .
-    image: netautomaton:0.1
+    image: netautomaton:0.1.1
     container_name: automaton1
     volumes:
       - ./scripts:/scripts

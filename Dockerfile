@@ -115,7 +115,7 @@ RUN pip install --trusted-host pypi.python.org \
 'yarl==1.3.0' 
 
 # Install other packages
-RUN apt-get update && apt-get install -y vim netcat jq 
+RUN apt-get update && apt-get install -y vim netcat jq tree
 
 # Add ciphers and key exchange algorithms to ssh config
 RUN mkdir /root/.ssh/ \

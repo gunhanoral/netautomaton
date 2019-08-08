@@ -1,10 +1,10 @@
 version: '3'
 services:
   netautomaton:
-    build:
-      context: .
-    image: netautomaton:0.1.1
+    image: gunhanoral/netautomaton:latest
     container_name: automaton1
     volumes:
       - ./scripts:/scripts
     tty: true
+    command: /bin/bash
+    user: '1000:1000'
